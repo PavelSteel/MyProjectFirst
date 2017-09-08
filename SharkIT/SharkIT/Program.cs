@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Data;
 using System.Xml;
 
-class FormWithManyControls : Form
+class SarkItFormTester : Form
 {
     TreeView treeView1;
     Panel panel1;
@@ -13,11 +13,11 @@ class FormWithManyControls : Form
     ListBox listBox1;
 
     // Метод-конструктор нашего класса
-    public FormWithManyControls()
+    public SarkItFormTester()
     {
         // Указываем размеры и заголовок окна
 
-        this.Text = "Форма, включающая различные элементы управления!";
+        this.Text = "Акула в сфере IT-технологий. Первые шаги";
         this.Height = 800; this.Width = 900;
         // Добавляем элемент TreeView в качестве своеобразного меню
 
@@ -29,7 +29,6 @@ class FormWithManyControls : Form
         TreeNode tn = new TreeNode("Элементы");
         tn.Expand();
 
-        tn.Nodes.Add(new TreeNode("[Очистить]"));
         tn.Nodes.Add(new TreeNode("Label"));
         tn.Nodes.Add(new TreeNode("Button"));
         tn.Nodes.Add(new TreeNode("CheckBox"));
@@ -40,6 +39,7 @@ class FormWithManyControls : Form
         tn.Nodes.Add(new TreeNode("MainMenu"));
         tn.Nodes.Add(new TreeNode("ToolBar"));
         tn.Nodes.Add(new TreeNode("PictureBox"));
+        tn.Nodes.Add(new TreeNode("[Очистить]"));
 
         treeView1.Nodes.Add(tn);
 
@@ -394,6 +394,6 @@ class FormWithManyControls : Form
     static void Main()
     {
         // // Создаем и запускаем форму
-        Application.Run(new FormWithManyControls());
+        Application.Run(new SarkItFormTester());
     }
 }
