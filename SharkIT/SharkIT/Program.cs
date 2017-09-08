@@ -29,7 +29,6 @@ class FormWithManyControls : Form
         TreeNode tn = new TreeNode("Элементы");
         tn.Expand();
 
-        tn.Nodes.Add(new TreeNode("[Очистить]"));
         tn.Nodes.Add(new TreeNode("Label"));
         tn.Nodes.Add(new TreeNode("Button"));
         tn.Nodes.Add(new TreeNode("CheckBox"));
@@ -40,6 +39,7 @@ class FormWithManyControls : Form
         tn.Nodes.Add(new TreeNode("MainMenu"));
         tn.Nodes.Add(new TreeNode("ToolBar"));
         tn.Nodes.Add(new TreeNode("PictureBox"));
+        tn.Nodes.Add(new TreeNode("[Очистить]"));
 
         treeView1.Nodes.Add(tn);
 
